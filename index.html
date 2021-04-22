@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI Calculator</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+</head>
+
+<!-----------stylesheet----------->
+<style>
+    body {
+        font-family: sans-serif;
+        color: cadetblue;
+        font-size: 15pt;
+    }
+.container {
+    padding-bottom: 20px;
+    padding-left:40px;
+}
+
+button {
+    margin-top: 30px;
+    background-color: lightslategrey;
+    color: white;
+    padding: 10px 5px 10px 5px;
+    text-transform: uppercase;
+
+}
+
+a:hover {
+    background-color: cadetblue;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: lightslategrey;
+    font-size: 40px;
+}
+
+#weight {
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 50px;
+}
+
+#height {
+    padding: 5px;
+    width: 50px;
+}
+
+</style>
+<!-----------end stylesheet----------->
+
+
+<body>
+
+<div class="container">
+    <h1>BMI Calculator</h1>
+    <label for="weight">Weight (lbs)</label>
+    <input type="text" id="weight" min="88" max="353">
+    <br>
+
+    <label for="height">Height (inches)</label>
+    <input type="text" id="height" min="59" max="79">
+    <br>
+
+    <button id="calculate"> Calculate </button>
+    <p id="error"></p>
+    <p id="bmi"></p>
+    <p id="number"></p>
+
+</div>
+
+
+</body>
+
+</html>
